@@ -1,31 +1,8 @@
-﻿Console.WriteLine("Input");
-string day = Console.ReadLine() ?? "";
+﻿Console.WriteLine("Введите число");
+string n_first = Console.ReadLine() ?? "";
+int n = Convert.ToInt32(n_first);
 
-switch (day)
+for (int i = -n; i < n; i++)
 {
-    case "1":
-    Console.WriteLine("Понедельник");
-    break;
-    case "2":
-    Console.WriteLine("Вторник");
-    break;
-    case "3":
-    Console.WriteLine("Среда");
-    break;
-    case "4":
-    Console.WriteLine("Четверг");
-    break;
-    case "5":
-    Console.WriteLine("Пятница");
-    break;
-    case "6":
-    Console.WriteLine("Суббота");
-    break;
-    case "7":
-    Console.WriteLine("Воскресение");
-    break;
-    default:
-    Console.WriteLine("Wrong");
-    break;
-
+    Console.Write(i+ " ");
 }
