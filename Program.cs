@@ -1,13 +1,32 @@
-﻿string input0 = Console.ReadLine() ?? "";
-string input1 = Console.ReadLine() ?? "";
-int num0 = Convert.ToInt32(input0);
-int num1 = Convert.ToInt32(input1);
+﻿Console.WriteLine("Input");
+string day = Console.ReadLine() ?? "";
 
-if ((num1 * num0!) == num0)
+if (day == "1")
 {
-    Console.WriteLine($"Число {num1} является квадратным корнем числа {num0}");
+    Console.WriteLine("Понедельник");
 }
-else
+if (day == "2")
 {
-    Console.WriteLine($"число {num1} не является квадратным корнем числа {num0}");
+    Console.WriteLine("Вторник");
 }
+if (day == "3")
+{
+    Console.WriteLine("Среда");
+}
+if (day == "4")
+{
+    Console.WriteLine("Четверг");
+}
+if (day == "5")
+{
+    Console.WriteLine("Пятница");
+}
+if (day == "6")
+{
+    Console.WriteLine("Суббота");
+}
+if (day == "7")
+{
+    Console.WriteLine("Воскресенье");
+}
+
