@@ -1,31 +1,6 @@
-﻿
-//Возвращает рандомное число
-
-int GetRandomNumber(int left, int right)
+﻿void CompareNums(int x, int y)
 {
-    Random rnd = new Random();
-    int number = rnd.Next(left, right +1);
-    return number;
+    if (x % y == 0) Console.WriteLine("Число 1 кратно числу 2");
+    else Console.WriteLine(x % y);
 }
-
-//возвращает максимальную цифру числа
-
-int GetMaxDigitOfNumber(int number)
-{
-    int firstDigit = number / 10;
-    int secondDigit = number % 10;
-
-    if(firstDigit > secondDigit)
-        return firstDigit;
-    else
-        return secondDigit;
-}
-
-int number = GetRandomNumber(10, 99);
-
-Console.WriteLine($"Сгенерированное число: {number}");
-
-int maxDigit = GetMaxDigitOfNumber(number);
-
-Console.WriteLine($"Наибольшая цифра числа: {maxDigit}");
-
+CompareNums(16, 4);
