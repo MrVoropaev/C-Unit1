@@ -196,3 +196,4 @@ if (array.Length % 2 != 0)
 }
 Console.WriteLine("произведение пар чисел в одномерном массиве ");
 Console.WriteLine(string.Join(", ", arrayResult)); */
+
